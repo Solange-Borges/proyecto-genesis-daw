@@ -8,3 +8,8 @@ CREATE TABLE recursos (
     imagen VARCHAR(255),
     archivo_url VARCHAR(255)
 );
+
+CREATE TABLE tipos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(50)
+);
