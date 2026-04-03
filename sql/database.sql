@@ -13,3 +13,8 @@ CREATE TABLE tipos (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(50)
 );
+ALTER TABLE recursos 
+ADD id_tipo INT;
+
+ALTER TABLE recursos 
+ADD FOREIGN KEY (id_tipo) REFERENCES tipos(id);
