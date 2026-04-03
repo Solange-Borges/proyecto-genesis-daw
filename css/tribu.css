@@ -1,0 +1,229 @@
+/* ======================================== */
+/* HERO (solo personalización) */
+/* ======================================== */
+
+.tribu-hero {
+    background: radial-gradient(circle at 20% 30%, #bfe3ff 0%, transparent 40%),
+                radial-gradient(circle at 80% 20%, #d7f5ff 0%, transparent 40%);
+    position: relative;
+    overflow: hidden;
+}
+
+.tribu-hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        var(--color-beige)
+    );
+}
+
+/* ======================================== */
+/* TITULO PERSONALIZADO */
+/* ======================================== */
+
+.tribu-title {
+    font-size: clamp(2.5rem, 5vw, 3.4rem);
+    letter-spacing: -1px;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.tribu-title::after {
+    width: 0;
+    animation: lineGrow 0.8s ease forwards;
+}
+
+/* ======================================== */
+/* GRID (extiende grid-4) */
+/* ======================================== */
+
+.tribu-grid {
+    max-width: 1200px;
+    margin: 60px auto;
+    justify-items: center;
+}
+
+/* ======================================== */
+/* CARDS (solo overrides del componente .card) */
+/* ======================================== */
+
+.tribu-card {
+    width: 260px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 320px; 
+}
+
+/* Contenedor de imagen */
+
+.tribu-img {
+    height: 100%;
+     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+}
+
+.tribu-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    
+}
+
+.tribu-card:hover .tribu-img img {
+    transform: scale(1.4) translateY(-5px);
+}
+
+/* Texto */
+
+.tribu-card h3 {
+    z-index: 2;
+    position: relative;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin: 10px 0 6px 0;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tribu-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    min-height: 40px;
+    text-align: center;
+}
+
+/* Info hover */
+
+.tribu-info {
+    position: absolute;
+    height: 100%;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+        to top,
+        var(--color-soft-yellow),
+        rgba(255,255,255,0.9)
+    );
+    padding: 20px;
+    font-size: 0.85rem;
+    transition: all 0.35s ease;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tribu-card:hover .tribu-info {
+    bottom: 0;
+}
+
+/* ======================================== */
+/* SECCIONES */
+/* ======================================== */
+
+.tribu-section {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.tribu-section p {
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+/* ======================================== */
+/* CREAR TRIBU */
+/* ======================================== */
+
+.tribu-create {
+    background: var(--color-beige);
+    margin-top: 80px;
+    padding: 70px 20px;
+}
+
+/* ======================================== */
+/* KIT */
+/* ======================================== */
+
+.tribu-kit {
+    background: var(--color-white);
+    text-align: center;
+}
+
+.kit-list {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.kit-list li {
+    background: var(--color-soft-yellow);
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+/* ======================================== */
+/* FINAL */
+/* ======================================== */
+
+.tribu-final {
+    background: linear-gradient(
+        135deg,
+        var(--color-primary),
+        var(--color-secondary)
+    );
+    color: var(--color-white);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.tribu-final h2 {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.8rem;
+}
+
+/* ======================================== */
+/* ANIMACIONES */
+/* ======================================== */
+
+@keyframes floatCharacter {
+    0%, 100% { transform: scale(1.3) translateY(0); }
+    50% { transform: scale(1.3) translateY(-10px); }
+}
+
+@keyframes lineGrow {
+    to { width: 70px; }
+}
+
+/* ======================================== */
+/* RESPONSIVE */
+/* ======================================== */
+
+@media (max-width: 600px) {
+    .tribu-card {
+        width: 100%;
+        max-width: 280px;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Contacto | Proyecto Génesis</title>
+
+<meta name="description" content="Contáctanos para preguntas, colaboración o información sobre los recursos de Proyecto Génesis.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS CORREGIDO -->
+<link rel="stylesheet" href="../CSS/variables.css">
+<link rel="stylesheet" href="../CSS/layout.css">
+<link rel="stylesheet" href="../CSS/components.css">
+<link rel="stylesheet" href="../CSS/contacto.css">
+
+<!-- FAVICON CORREGIDO -->
+<link rel="icon" href="../imagenes/favicon.png">
+
+</head>
+
+<body>
+
+<div id="header-container"></div>
+
+<main>
+
+<!-- HERO -->
+<section class="contacto-hero">
+  <div class="wrap">
+    <h1>Hablemos</h1>
+    <p>
+      Si tienes preguntas, deseas colaborar o quieres saber más sobre
+      Proyecto Génesis, estaremos felices de escucharte.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto-section">
+  <div class="wrap contacto-grid">
+
+    <!-- FORMULARIO -->
+    <div class="contacto-form">
+      <h2>Envíanos un mensaje</h2>
+
+      <form action="https://formsubmit.co/progn.tribu@gmail.com" method="POST">
+
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+
+        <select name="motivo" required>
+          <option value="">Motivo del mensaje</option>
+          <option>Consulta sobre recursos</option>
+          <option>Quiero usar el material en mi iglesia</option>
+          <option>Colaboración</option>
+          <option>Otro</option>
+        </select>
+
+        <textarea name="mensaje" rows="6" placeholder="Escribe tu mensaje..." required></textarea>
+
+        <button type="submit" class="btn-primary">
+          Enviar mensaje
+        </button>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nuevo mensaje - Proyecto Génesis">
+
+      </form>
+    </div>
+
+    <!-- INFORMACIÓN -->
+    <div class="contacto-info">
+      <h2>También puedes escribirnos</h2>
+
+      <p>
+        Nos encanta conectar con personas que desean formar
+        a la próxima generación con fundamento bíblico.
+      </p>
+
+      <div class="contacto-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>progn.tribu@gmail.com</span>
+      </div>
+
+      <div class="contacto-item">
+        <i class="fa-brands fa-instagram"></i>
+        <span>@proyectogenesis</span>
+      </div>
+
+      <div class="contacto-item">
+        <i class="fa-solid fa-church"></i>
+        <span>Colaboración con iglesias</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FRASE -->
+<section class="contacto-quote">
+  <div class="wrap">
+    <h2>
+      Juntos podemos levantar una generación que conozca a Dios
+      y viva con identidad y propósito.
+    </h2>
+  </div>
+</section>
+
+</main>
+
+<div id="footer-container"></div>
+
+<!-- JS CORREGIDO -->
+<script src="../js/script.js" defer></script>
+
+</body>
+</html>
