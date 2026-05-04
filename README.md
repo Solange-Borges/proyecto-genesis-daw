@@ -139,3 +139,10 @@ Estudiante de Desarrollo de Aplicaciones Web (DAW)
 Este proyecto no busca ser solo una web, sino una herramienta real que pueda ser utilizada por iglesias y familias para formar la próxima generación con valores sólidos.
 
 ---
+## 🗄️ Base de datos
+
+La base de datos de este proyecto ha sido desarrollada en un repositorio independiente:
+
+https://github.com/Solange-Borges/proyecto-genesis-bd
+
+Esta base de datos modela el funcionamiento interno del sistema, incluyendo la gestión de recursos, usuarios y contenidos educativos.
