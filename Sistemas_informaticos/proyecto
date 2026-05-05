@@ -1,0 +1,51 @@
+# 🖥️ Proyecto Génesis – Sistemas Informáticos
+
+## 🧩 Descripción
+
+En este apartado explico el entorno que he utilizado para desarrollar el proyecto Proyecto Génesis.
+
+---
+
+## 💻 Sistema operativo
+
+He trabajado en un ordenador con Windows.
+
+---
+
+## 🛠️ Programas utilizados
+
+* IntelliJ IDEA → para programar en Java
+* MySQL Workbench → para crear y gestionar la base de datos
+* GitHub → para guardar y organizar el proyecto
+* Java → para ejecutar la aplicación
+
+---
+
+## ⚙️ Cómo he preparado el entorno
+
+Para poder trabajar en el proyecto he tenido que:
+
+* Instalar Java
+* Instalar IntelliJ
+* Instalar MySQL
+* Crear la base de datos del proyecto
+* Configurar la conexión entre Java y la base de datos
+
+---
+
+## ▶️ Cómo funciona el proyecto
+
+### Base de datos:
+
+Primero ejecuto los scripts SQL en MySQL para crear las tablas y añadir datos.
+
+### Aplicación:
+
+Después ejecuto el programa en IntelliJ.
+Aparece un menú en consola desde el que puedo ver, añadir o buscar recursos.
+
+---
+
+## 💡 Conclusión
+
+Con este proyecto he aprendido a preparar el entorno de trabajo y a conectar una aplicación con una base de datos para que funcione correctamente.
