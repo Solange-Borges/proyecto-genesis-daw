@@ -1,0 +1,165 @@
+/* ========================================= */
+/* HERO */
+/* ========================================= */
+
+.recursos-hero {
+    background: linear-gradient(
+        180deg,
+        #98caf7 0%,
+        #98caf7 80%,
+        #fffffddc 100%
+    );
+    padding: 120px 20px 80px;
+    text-align: center;
+}
+
+.recursos-hero h1 {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.recursos-hero p {
+    font-size: 1.2rem;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* ========================================= */
+/* INTRO */
+/* ========================================= */
+
+.recursos-intro {
+    background: var(--color-beige);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.recursos-intro p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ========================================= */
+/* GRID */
+/* ========================================= */
+
+.recursos-grid-section {
+    background: var(--color-white);
+    padding: 80px 0;
+}
+
+.recursos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* ========================================= */
+/* TARJETA */
+/* ========================================= */
+
+.recurso-card {
+    background: var(--color-white);
+    padding: 35px 30px;
+    border-radius: 20px;
+    border: 2px solid var(--color-accent);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recurso-card i {
+    font-size: 28px;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.recurso-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    color: var(--color-primary);
+}
+
+.recurso-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: var(--text-secondary);
+}
+
+.recurso-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ========================================= */
+/* FILTROS */
+/* ========================================= */
+
+.recursos-filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 40px 0;
+}
+
+.filtro-btn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 2px solid var(--color-primary);
+    background: var(--color-white);
+    color: var(--color-primary);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.filtro-btn:hover,
+.filtro-btn.active {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* ========================================= */
+/* FRASE FINAL */
+/* ========================================= */
+
+.recursos-quote {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-white);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.recursos-quote h2 {
+    max-width: 750px;
+    margin: auto;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+/* ========================================= */
+/* RESPONSIVE */
+/* ========================================= */
+
+@media (max-width: 900px) {
+    .recursos-preview-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .recursos-preview-grid {
+        grid-template-columns: 1fr;
+    }
+}
